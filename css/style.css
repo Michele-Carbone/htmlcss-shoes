@@ -1,0 +1,43 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Clearfix*/
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Generici*/
+body{
+    font-family: Arial,  sans-serif, Verdana;
+}
+
+header{
+    position: fixed;
+    line-height: 50px;
+    height: 100px;
+    width: 100%;
+    top: 5px;
+    right: 10px;
+    text-align: right;
+}
+li{
+    display: inline-block;
+    margin: 20px 25px;
+    padding: 2px 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+main{
+    height: 100vh;
+    margin: 0px auto;
+    background-color: hsl(0, 100%, 50%);
+}

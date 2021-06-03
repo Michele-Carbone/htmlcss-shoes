@@ -11,33 +11,49 @@
     display: table;
     clear: both;
 }
+/*proprieta per ogni singola parte dello schermo*/
+.part1{
+    background-color: red;
+}
+
+.part2{
+    background-color: green;
+}
+
+.part3{
+    background-color: yellow;
+}
+.text-part1{
+    color: yellow;
+}
+
+.text-part2{
+    color:yellow;
+}
+
+.text-part3{
+    color:green;
+}
 
 /*Generici*/
 body{
-    font-family: Arial,  sans-serif, Verdana;
-}
-
-header{
-    position: fixed;
-    line-height: 50px;
-    height: 100px;
-    width: 100%;
-    top: 5px;
-    right: 10px;
-    text-align: right;
-}
-li{
-    display: inline-block;
-    margin: 20px 25px;
-    padding: 2px 20px;
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-    background-color: white;
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-main{
+
+.screen{
     height: 100vh;
-    margin: 0px auto;
-    background-color: hsl(0, 100%, 50%);
+    position: relative;
+}
+
+.screen .img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.screen .img h1{
+    font-size: 50px;
 }
